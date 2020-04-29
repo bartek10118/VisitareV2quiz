@@ -45,7 +45,7 @@ namespace Visitare
                 GoodAnswer = Convert.ToInt16(odpowiedzPrawidlowa.Text), 
                 Question1 = zagadkaEntry.Text };
             var questionPage = new QuestionPage(question);
-          questionPage.Disappearing += QuestionPageClosed;
+           questionPage.Disappearing += QuestionPageClosed;
 
           await Navigation.PushModalAsync(questionPage);
 
